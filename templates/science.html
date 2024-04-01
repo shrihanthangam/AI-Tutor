@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutor - Homepage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{{ url_for('static', filename='assets/logo.png') }}" lt="logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('math') }}">Math Tutor</a></li>
+                    <li><a href="{{ url_for('science') }}">Science Tutor</a></li>
+                    <li><a href="{{ url_for('history') }}">History Tutor</a></li>
+                    <li><a href="{{ url_for('english') }}">English Tutor</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
