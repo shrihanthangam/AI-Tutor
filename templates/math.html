@@ -27,7 +27,9 @@
     <div id="messages">
         {% for msg in messages %}
             <div class="message {% if msg.sender == 'human' %}person-message{% else %}ai-message{% endif %}">
-                <p>{{ msg.message }} <br> <br> </p>
+                {% for line in msg.message %}
+                    <p>{{line}}</p>
+                {% endfor %}
             </div>
         {% endfor %}
     </div>
